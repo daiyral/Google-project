@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advanced.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="logo">
+        <span style="color:rgb(66,133,244)">G</span>
+        <span style="color:rgb(219,68,55)">o</span>
+        <span style="color:rgb(244,160,0)">o</span>
+        <span style="color:rgb(66,133,244)">g</span>
+        <span style="color:rgb(15,157,88)">l</span>
+        <span style="color:rgb(219,68,55)">e</span>
+    </div>
+    <div id="gray_box"></div>
+    <div id="white_box"></div>
+    <h4 id="title_advanced">Advanced Search</h4>
+
+    <form action="https://google.com/search" id="advanced_form">
+            <div class="row">
+                <div class="col">
+                    <div id="head">Find pages with...<br><br></div>
+                </div>
+                <div class="col" id="head_2">
+                    <div>To do this in the search box.</div>
+                </div>
+            </div>
+            <div class="form-group" id="a_words">
+                <div class="row">
+                    <div class="col">
+                        <label for="all_words" id="lbl_all">all theese words:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="as_q" id="all_words" class="form-control"> 
+                    </div>
+                    <div class="col" id="example_1">
+                       <span class="example">Type the important words:</span><span class="example_font"> tri-color rat terrier</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" id="b_words">
+                <div class="row">
+                    <div class="col">
+                        <label for="exact_words" id="lbl_exact"> this exact word or phrase:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="as_epq" id="exact_words" class="form-control">
+                    </div>
+                    <div class="col" id="example_2">
+                        <span class="example">Put exact words in quotes:</span><span class="example_font"> "rat terrier"</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group" id="c_words">
+                <div class="row">
+                    <div class="col">
+                        <label for="any_words" id="lbl_any">any of these words:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="as_oq" id="any_words" class="form-control">
+                    </div>
+                    <div class="col" id="example_3">
+                         <span class="example">Type OR between all the words you want:</span><span class="example_font"> miniature OR standard</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" id="d_words">
+                <div class="row">
+                    <div class="col">
+                        <label for="none_words" id="lbl_none">none of theese words:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text"  name="as_eq" id="none_words" class="form-control">
+                    </div>
+                    <div class="col" id="example_4">
+                        <span class="example">Put a minus sign just before words that you don't want:<br></span><span class="example_font">-rodent, -"Jack Russel"</span>
+                    </div>
+                </div>      
+            </div>    
+            <input type="submit" value="Advanced Search" id="advanced_btn">  
+     </form> 
+<a href="google_image.html" id="link_images">Images</a>
+<a href="main_page_google.html"id="link_main">Google Search</a>
+    
+</body>
+</html>
