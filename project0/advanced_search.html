@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <title>Advanced Search</title>
-    <link rel="stylesheet" href="advanced.css">
+    <link rel="stylesheet" href="project 0.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
 <body>
-    <div id="logo">
-        <span style="color:rgb(66,133,244)">G</span>
-        <span style="color:rgb(219,68,55)">o</span>
-        <span style="color:rgb(244,160,0)">o</span>
-        <span style="color:rgb(66,133,244)">g</span>
-        <span style="color:rgb(15,157,88)">l</span>
-        <span style="color:rgb(219,68,55)">e</span>
-    </div>
-    <div id="gray_box"></div>
-    <div id="white_box"></div>
+    <nav class="navbar navbar-expand-md  navbar-custom">
+        <a class="navbar-brand" href="main_page_google.html">
+        <img src="navbar-icon.png">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="google_image.html" id="link_image" >Images</a></li>
+            <li class="nav-item"><a href="main_page_google.html" id="link_main">Google Search</a></li>
+            </div>
+    </nav>
     <h4 id="title_advanced">Advanced Search</h4>
+    <hr>
 
     <form action="https://google.com/search" id="advanced_form">
             <div class="row">
@@ -30,8 +31,8 @@
             </div>
             <div class="form-group" id="a_words">
                 <div class="row">
-                    <div class="col">
-                        <label for="all_words" id="lbl_all">all theese words:</label>
+                    <div class="col-2">
+                        <label for="all_words" id="lbl_all">all these words:</label>
                     </div>
                     <div class="col">
                         <input type="text" name="as_q" id="all_words" class="form-control"> 
@@ -43,7 +44,7 @@
             </div>
             <div class="form-group" id="b_words">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-2">
                         <label for="exact_words" id="lbl_exact"> this exact word or phrase:</label>
                     </div>
                     <div class="col">
@@ -57,7 +58,7 @@
             </div>
             <div class="form-group" id="c_words">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-2">
                         <label for="any_words" id="lbl_any">any of these words:</label>
                     </div>
                     <div class="col">
@@ -70,8 +71,8 @@
             </div>
             <div class="form-group" id="d_words">
                 <div class="row">
-                    <div class="col">
-                        <label for="none_words" id="lbl_none">none of theese words:</label>
+                    <div class="col-2">
+                        <label for="none_words" id="lbl_none">none of these words:</label>
                     </div>
                     <div class="col">
                         <input type="text"  name="as_eq" id="none_words" class="form-control">
@@ -80,11 +81,15 @@
                         <span class="example">Put a minus sign just before words that you don't want:<br></span><span class="example_font">-rodent, -"Jack Russel"</span>
                     </div>
                 </div>      
-            </div>    
-            <input type="submit" value="Advanced Search" id="advanced_btn">  
+            </div>   
+            <div class="form-group"> 
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"><input type="submit" value="Advanced Search" id="advanced_btn"> </div>
+            </div> 
+            </div>
      </form> 
-<a href="google_image.html" id="link_images">Images</a>
-<a href="main_page_google.html"id="link_main">Google Search</a>
+
     
 </body>
 </html>
